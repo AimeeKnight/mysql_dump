@@ -1,0 +1,23 @@
+heroku config
+ruby get_db.rb
+
+backup = 'somefile.sql'
+`mysqldump #{backup}`
+`mysql < #{backup}`
+
++------------------------------+
+| Tables_in_tneppc_development |
++------------------------------+
+| assets                       |
+| common_names                 |
+| invasive_plants              |
+| life_histories               |
+| page_sections                |
+| pages                        |
+| plant_details                |
+| schema_migrations            |
+| sessions                     |
+| similar_plants               |
+| treatments                   |
+| users                        |
++------------------------------+
